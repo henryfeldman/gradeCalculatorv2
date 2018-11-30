@@ -1,0 +1,13 @@
+body{
+    position:relative;
+    background-color: rosybrown;
+    text-align: center;
+}
+
+#container, #gradeTable {
+
+    margin:auto;
+    width: 50%;
+    position:relative;
+    text-align: center;
+}

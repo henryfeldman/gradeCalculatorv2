@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Your Grade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload=setUpPage()>
+<div id = "container">
+    <h1 class="badge badge-secondary"> Ready to Calculate Your Grade?</h1>
+    <h2>Enter a grade category and the weight for that category, then calculate your grade!</h2>
+
+    <br>
+
+        <div id = "gradeTable"></div>
+
+
+    <br>
+    <br>
+    <input type="text" placeholder = "Ex: Tests/Quizzes"id="categoryName">
+
+    <button id = "addRow" class="btn btn-primary"onclick="addRow()">Add Row</button>
+
+    <button class="btn btn-info" onclick="calculateGrade()">Done!</button><br><br>
+    <div id = "finalGrade"></div>
+    <br><br>
+    Finals Calculator
+    <br><br>
+    Desired Grade: <input id = "desiredGrade">
+    <br>
+    <br>
+    Final Weight: <input id = "finalWeight">
+    <br><br>
+    <button onclick="gradeNeeded()"class="btn btn-success">Calculate Grade Required</button>
+    <div id="answer"></div>
+</div>
+</body>
+</html>
